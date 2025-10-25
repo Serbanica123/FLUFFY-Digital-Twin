@@ -1,0 +1,36 @@
+# Import necessary modules
+import omni
+from omni.isaac.dynamic_control import _dynamic_control
+import numpy as np
+
+# Acquire the Dynamic Control interface
+# This interface is responsible for controlling articulations in the simulation.
+dc = _dynamic_control.acquire_dynamic_control_interface()
+
+# Retrieve the Franka articulation (robot arm) from the simulation using its path.
+# "/Franka" is the path to the robot in the simulation scene. The 'articulation' 
+# variable now refers to this specific robot arm.
+articulation = dc.get_articulation("/Franka")
+
+# Wake up the articulation.
+# This step is necessary because an articulation (like a robot arm) can be asleep
+# or inactive. Calling 'wake_up_articulation' ensures that it is ready to accept 
+# commands and start moving.
+dc.wake_up_articulation(articulation)
+
+# Define the target joint angles.
+# Here, we are generating random joint angles for each of the 9 joints in the Franka robot.
+# The values will range between -1 and 1 radians. In real scenarios, you would set these 
+# angles based on specific tasks or desired end-effector positions.
+joint_angles = [np.random.rand(9) * 2 - 1]
+
+# Apply the joint position targets.
+# This command sends the generated joint angles to the Franka arm, instructing it to move 
+# its joints towards the specified positions. The robot will attempt to reach the target
+# positions defined in 'joint_angles' for all 9 joints.
+dc.set_articulation_dof_position_targets(articulation, joint_angles)
+
+# Start the simulation.
+# Isaac Sim uses a timeline system to run the simulation. Calling 'play()' on the 
+# timeline interface starts the simulation, making the changes to the robot take effect.
+omni.timeline.get_timeline_interface().play()

@@ -1,0 +1,113 @@
+{
+    "id": 0,
+    "path": "/World/FLUFFY/FLUFFY",
+    "vision_lane": {
+        "Sensors": {
+            "0": "/World/FLUFFY/FLUFFY/LightBeam_Sensor",
+            "1": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_01",
+            "2": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_02",
+            "3": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_03",
+            "4": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_04",
+            "5": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_05",
+            "6": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_06",
+            "7": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_07"
+        },
+        "Actuators": [
+            "ChainConstraint",
+            "BeltConstraint",
+            "BeltConstraint_01",
+            "BeltConstraint_02",
+            "BeltConstraint_03",
+            "Side_Actuator",
+            "Side_Actuator_01",
+            "Side_Actuator_02",
+            "Side_Actuator_03",
+            "Vision_Actuator_Front",
+            "Vision_Actuator_Rear",
+            "Stopper_Actuator",
+            "Stopper_Actuator_01",
+            "Stopper_Actuator_02",
+            "Stopper_Actuator_03",
+            "HQ3_Actuator_Top",
+            "HQ3_Actuator_Bottom",
+            "HQ3_Actuator_Top_01",
+            "HQ3_Actuator_Bottom_01",
+            "HQ3_Actuator_Top_02",
+            "HQ3_Actuator_Bottom_02",
+            "HQ2_Actuator"
+        ],
+        "Conveyors": [
+            "/World/FLUFFY/FLUFFY/Chain_ConveyorBeltGraph/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Belt_ConveyorBeltGraph/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Belt_ConveyorBeltGraph_01/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Belt_ConveyorBeltGraph_02/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Belt_ConveyorBeltGraph_03/ConveyorNode"
+        ]
+    },
+    "repair_lane": {
+        "Sensors": {
+            "0": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_08",
+            "1": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_09",
+            "2": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_10",
+            "3": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_11",
+            "4": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_12"
+        },
+        "Actuators": [
+            "ChainConstraint_01",
+            "BeltConstraint_04",
+            "BeltConstraint_05",
+            "ChainConstraint_02",
+            "ChainConstraint_03",
+            "EQ_Actuator",
+            "EQ_Actuator_01",
+            "Stopper_Actuator_04",
+            "Stopper_Actuator_05",
+            "HQ2_Actuator_01",
+            "HQ2_Actuator_02"
+        ],
+        "Conveyors": [
+            "/World/FLUFFY/FLUFFY/Chain_ConveyorBeltGraph_01/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Belt_ConveyorBeltGraph_04/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Belt_ConveyorBeltGraph_05/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Side_Chain_ConveyorBeltGraph/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Side_Chain_ConveyorBeltGraph_01/ConveyorNode"
+        ]
+    },
+    "assembly_lane": {
+        "Sensors": {
+            "0": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_13",
+            "1": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_14",
+            "2": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_15",
+            "3": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_16",
+            "4": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_17",
+            "5": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_18",
+            "6": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_19",
+            "7": "/World/FLUFFY/FLUFFY/LightBeam_Sensor_20"
+        },
+        "Actuators": [
+            "ChainConstraint_04",
+            "BeltConstraint_06",
+            "BeltConstraint_07",
+            "ChainConstraint_05",
+            "ChainConstraint_06",
+            "EQ_Actuator_02",
+            "EQ_Actuator_03",
+            "EQ_Actuator_04",
+            "EQ_Actuator_05",
+            "Stopper_Actuator_06",
+            "Stopper_Actuator_07",
+            "Stopper_Actuator_08",
+            "Stopper_Actuator_09",
+            "Stopper_Actuator_10",
+            "HQ2_Actuator_03",
+            "HQ2_Actuator_04"
+        ],
+        "Conveyors": [
+            "/World/FLUFFY/FLUFFY/Chain_ConveyorBeltGraph_02/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Belt_ConveyorBeltGraph_06/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Belt_ConveyorBeltGraph_07/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Side_Chain_ConveyorBeltGraph_02/ConveyorNode",
+            "/World/FLUFFY/FLUFFY/Side_Chain_ConveyorBeltGraph_03/ConveyorNode"
+        ]
+    }
+}
