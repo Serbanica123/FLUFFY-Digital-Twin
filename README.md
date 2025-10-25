@@ -1,12 +1,11 @@
 # FLUFFY Simulation API
- this repository contains the code to control the Omniverse simulation of FLUFFY
+ This repository contains the code to control the Omniverse simulation of FLUFFY
 
 # installing dependencies
 use command: pip install isaacsim
 
 # GitHub setup
 - FLUFFY contains only the source code of the project
-- practice contains a lot of practice files to get started made by the team
 - Tests contains a few tests for different classes
 - final lib build contains all files needed to build the .whl file
 - demo code contains a few demos of the library
